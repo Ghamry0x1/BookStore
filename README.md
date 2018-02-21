@@ -1,6 +1,6 @@
 ## BookStore ##
 
-**Bookstore** is a simple web application/RESTful API server with a simple front-end that is built using the MEAN Stack.
+**BookStore** is a simple web application/RESTful API server with a simple front-end that is built using the MEAN Stack.
 
 ## Usage ##
 - Clone or download repo
