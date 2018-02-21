@@ -22,7 +22,7 @@ mongoose.connect('mongodb://localhost/bookstore', function (err) {
 });
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('client', path.join(__dirname, 'client'));
 app.set('view engine', 'ejs');
 
 // uncomment after placing your favicon in /public
@@ -31,7 +31,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'client')));
 
 app.use('/', index);
 app.use('/api/books', booksapi);
